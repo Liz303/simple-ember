@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Ember Multi Page Demo</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+
+	<script type="text/x-handlebars" data-template-name="application">
+		<header>
+			{{ render 'nav' }}
+		</header>
+		<h1>Hello App</h1>
+		{{outlet}}
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="nav">
+		<ul class="nav">
+			<li>{{#linkTo "index"}}HOME{{/linkTo}}</li>
+			<li>{{#linkTo "one"}}ONE{{/linkTo}}</li>
+			<li>{{#linkTo "two"}}TWO{{/linkTo}}</li>
+			<li>{{#linkTo "three"}}THREE{{/linkTo}}</li>
+			<li>{{#linkTo "four"}}FOUR{{/linkTo}}</li>
+		</ul>
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="index">
+		HELLO INDEX
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="one">
+		THIS IS ONE
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="two">
+		THIS IS TWO
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="three">
+		THIS IS THREE
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="four">
+		THIS IS FOUR
+	</script>
+
+	<!-- lib scripts -->
+	<script src="js/libs/jquery-1.8.3.min.js"></script>
+	<script src="js/libs/handlebars-1.0.rc.1.min.js"></script>
+	<script src="js/libs/ember-1.0.0-pre.4.js"></script>
+	<script src="js/libs/ember-data.js"></script>
+
+	<!-- app scripts -->	
+	<script src="js/app.js"></script>
+
+</body>
+</html>
