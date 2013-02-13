@@ -1,4 +1,3 @@
-ember-boilerplate
-=================
+# simple-ember
 
-Used for playing around with Ember JS
+The simplest example I could think of using the router for multiple "pages".
